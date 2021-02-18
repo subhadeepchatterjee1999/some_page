@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./about.css">
+  </head>
+  <body>
+    <div class="navi">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+        <a class="navbar-brand" href="./index.html">TexhIE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./feat.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="price.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./abou.html">About US</a>
+            </li>
+
+          </ul>
+          <div class="ml-auto">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+
+
+    <div class="row">
+      <div class="col-lg-6 text-center">
+        <h1>ABOUT US</h1>
+      </div>
+      <div class="col-lg-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>  </div>
+    <hr>
+    <div id="chartdiv"></div>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/wordCloud.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script type="text/javascript">
+    /**
+* ---------------------------------------
+* This demo was created using amCharts 4.
+*
+* For more information visit:
+* https://www.amcharts.com/
+*
+* Documentation is available at:
+* https://www.amcharts.com/docs/v4/
+* ---------------------------------------
+*/
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
+chart.fontFamily = "Courier New";
+var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries());
+series.randomness = 0.1;
+series.rotationThreshold = 0.5;
+
+series.data = [
+{
+  "tag": "4711",
+  "count": 1
+},
+{
+  "tag": "Abercrombie & Fitch",
+  "count": 1
+},
+{
+  "tag": "Acqua di Parma",
+  "count": 1
+},
+{
+  "tag": "Adolfo Dominguez",
+  "count": 2
+},
+{
+  "tag": "Aether",
+  "count": 1
+},
+{
+  "tag": "Agatha Ruiz de la Prada",
+  "count": 3
+},
+{
+  "tag": "Agent Provocateur",
+  "count": 1
+},
+{
+  "tag": "Al Haramain",
+  "count": 1
+},
+{
+  "tag": "Amouage",
+  "count": 2
+},
+{
+  "tag": "Amouroud",
+  "count": 1
+},
+{
+  "tag": "Andrea Maack",
+  "count": 1
+},
+{
+  "tag": "Anfas by Asim Al Qassim",
+  "count": 4
+},
+{
+  "tag": "Angelo Caroli",
+  "count": 4
+},
+{
+  "tag": "Anna Sui",
+  "count": 1
+},
+{
+  "tag": "Annayake",
+  "count": 2
+},
+{
+  "tag": "Antonio Banderas",
+  "count": 3
+},
+{
+  "tag": "Armand Basi",
+  "count": 1
+},
+{
+  "tag": "Armani Privé",
+  "count": 1
+},
+{
+  "tag": "Atkinsons London 1799",
+  "count": 2
+},
+{
+  "tag": "Avon",
+  "count": 6
+},
+{
+  "tag": "Azzaro",
+  "count": 6
+},
+{
+  "tag": "Barbour",
+  "count": 2
+},
+{
+  "tag": "Bastide",
+  "count": 1
+},
+{
+  "tag": "Bath & Body Works",
+  "count": 8
+},
+{
+  "tag": "Be Soliflore",
+  "count": 3
+},
+{
+  "tag": "Bentley",
+  "count": 3
+},
+{
+  "tag": "Berdoues",
+  "count": 2
+},
+{
+  "tag": "Betty Barclay",
+  "count": 1
+},
+{
+  "tag": "Biotherm",
+  "count": 1
+},
+{
+  "tag": "Black Up",
+  "count": 1
+},
+{
+  "tag": "Blauer",
+  "count": 2
+},
+{
+  "tag": "Blumarine",
+  "count": 1
+},
+{
+  "tag": "Boadicea The Victorious",
+  "count": 4
+},
+{
+  "tag": "Bond No. 9",
+  "count": 1
+},
+{
+  "tag": "Bortnikoff",
+  "count": 3
+},
+{
+  "tag": "Botanicae Expressions",
+  "count": 5
+},
+{
+  "tag": "Boucheron",
+  "count": 4
+},
+{
+  "tag": "Britney Spears",
+  "count": 1
+},
+{
+  "tag": "Bulgari : Le Gemme",
+  "count": 3
+},
+{
+  "tag": "Burberry",
+  "count": 1
+},
+{
+  "tag": "By Terry",
+  "count": 1
+},
+{
+  "tag": "Byredo",
+  "count": 1
+},
+{
+  "tag": "Byron Parfums",
+  "count": 2
+},
+{
+  "tag": "Cacharel",
+  "count": 2
+},
+{
+  "tag": "Calvin Klein",
+  "count": 7
+},
+{
+  "tag": "Carolina Herrera",
+  "count": 5
+},
+{
+  "tag": "Cartier",
+  "count": 2
+},
+{
+  "tag": "Cerruti",
+  "count": 1
+},
+{
+  "tag": "Chanel",
+  "count": 2
+},
+{
+  "tag": "Chantecaille",
+  "count": 2
+},
+{
+  "tag": "Chloé",
+  "count": 1
+},
+{
+  "tag": "Chopard",
+  "count": 1
+},
+{
+  "tag": "Clean",
+  "count": 1
+},
+{
+  "tag": "Clive Christian",
+  "count": 4
+},
+{
+  "tag": "Coach",
+  "count": 1
+},
+{
+  "tag": "CoStume National",
+  "count": 2
+},
+{
+  "tag": "Courrèges",
+  "count": 1
+},
+{
+  "tag": "David Beckham",
+  "count": 1
+},
+{
+  "tag": "Davidoff",
+  "count": 5
+},
+{
+  "tag": "Desigual",
+  "count": 2
+},
+{
+  "tag": "Dior",
+  "count": 5
+},
+{
+  "tag": "Diptyque",
+  "count": 1
+},
+{
+  "tag": "Dolce & Gabbana",
+  "count": 4
+},
+{
+  "tag": "Dolce Fiore",
+  "count": 2
+},
+{
+  "tag": "Donna Karan DKNY",
+  "count": 6
+},
+{
+  "tag": "Dunhill London",
+  "count": 4
+},
+{
+  "tag": "Dusita",
+  "count": 1
+},
+{
+  "tag": "Dzintars",
+  "count": 3
+},
+{
+  "tag": "Edward Bess",
+  "count": 1
+},
+{
+  "tag": "Elie Saab",
+  "count": 2
+},
+{
+  "tag": "Elizabeth Arden",
+  "count": 4
+},
+{
+  "tag": "Ella K",
+  "count": 1
+},
+{
+  "tag": "Emporio Armani",
+  "count": 2
+},
+{
+  "tag": "Ermenegildo Zegna",
+  "count": 5
+},
+{
+  "tag": "Escada",
+  "count": 1
+},
+{
+  "tag": "Etat Libre d'Orange",
+  "count": 2
+},
+{
+  "tag": "Ex Nihilo",
+  "count": 1
+},
+{
+  "tag": "Fiele Fragrances",
+  "count": 4
+},
+{
+  "tag": "Floris",
+  "count": 1
+},
+{
+  "tag": "Fort & Manlé",
+  "count": 1
+},
+{
+  "tag": "Fragonard",
+  "count": 1
+},
+{
+  "tag": "French Connection",
+  "count": 2
+},
+{
+  "tag": "Gabriella Chieffo",
+  "count": 1
+},
+{
+  "tag": "Gallagher Fragrances",
+  "count": 1
+},
+{
+  "tag": "Ghost",
+  "count": 1
+},
+{
+  "tag": "Giorgio Armani",
+  "count": 5
+},
+{
+  "tag": "Givenchy",
+  "count": 3
+},
+{
+  "tag": "Givenchy : L'Atelier de Givenchy",
+  "count": 1
+},
+{
+  "tag": "Gorilla Perfumes",
+  "count": 1
+},
+{
+  "tag": "Goutal (Annick Goutal)",
+  "count": 1
+},
+{
+  "tag": "Gucci",
+  "count": 4
+},
+{
+  "tag": "Guerlain",
+  "count": 18
+},
+{
+  "tag": "Halloween",
+  "count": 1
+},
+{
+  "tag": "Hendley",
+  "count": 1
+},
+{
+  "tag": "Henry Rose",
+  "count": 1
+},
+{
+  "tag": "Hermès",
+  "count": 4
+},
+{
+  "tag": "Herrera Confidential",
+  "count": 1
+},
+{
+  "tag": "Hollister",
+  "count": 2
+},
+{
+  "tag": "Hugo Boss",
+  "count": 3
+},
+{
+  "tag": "Hugo Boss : Hugo",
+  "count": 1
+},
+{
+  "tag": "Initio Parfums Privé",
+  "count": 1
+},
+{
+  "tag": "Intimacy",
+  "count": 1
+},
+{
+  "tag": "Issey Miyake",
+  "count": 5
+},
+{
+  "tag": "J.U.S",
+  "count": 11
+},
+{
+  "tag": "Jason Wu",
+  "count": 1
+},
+{
+  "tag": "JD Jeffrey Dame",
+  "count": 1
+},
+{
+  "tag": "Jean Paul Gaultier",
+  "count": 3
+},
+{
+  "tag": "Jean-Michel Duriez",
+  "count": 1
+},
+{
+  "tag": "Jequiti",
+  "count": 1
+},
+{
+  "tag": "Jil Sander",
+  "count": 2
+},
+{
+  "tag": "Jimmy Choo",
+  "count": 3
+},
+{
+  "tag": "Jo Malone London",
+  "count": 8
+},
+{
+  "tag": "Joop!",
+  "count": 1
+},
+{
+  "tag": "Joya",
+  "count": 3
+},
+{
+  "tag": "Juliana Paes",
+  "count": 1
+},
+{
+  "tag": "Juliette has a Gun",
+  "count": 1
+},
+{
+  "tag": "Jusbox Perfumes",
+  "count": 1
+},
+{
+  "tag": "Kajal",
+  "count": 4
+},
+{
+  "tag": "Kanebo",
+  "count": 1
+},
+{
+  "tag": "Karen Walker",
+  "count": 2
+},
+{
+  "tag": "Kenzo",
+  "count": 6
+},
+{
+  "tag": "Kerosene",
+  "count": 1
+},
+{
+  "tag": "Kilian",
+  "count": 1
+},
+{
+  "tag": "KKW Fragrance",
+  "count": 3
+},
+{
+  "tag": "Korres",
+  "count": 1
+},
+{
+  "tag": "Lacoste",
+  "count": 3
+},
+{
+  "tag": "Lancaster",
+  "count": 1
+},
+{
+  "tag": "Lancôme",
+  "count": 8
+},
+{
+  "tag": "Lanvin",
+  "count": 1
+},
+{
+  "tag": "L'Artisan Parfumeur",
+  "count": 2
+},
+{
+  "tag": "Le Couvent des Minimes",
+  "count": 6
+},
+{
+  "tag": "Les Senteurs",
+  "count": 1
+},
+{
+  "tag": "Les Soeurs De Noe",
+  "count": 5
+},
+{
+  "tag": "Liu•Jo",
+  "count": 1
+},
+{
+  "tag": "Lively",
+  "count": 1
+},
+{
+  "tag": "L'Occitane",
+  "count": 4
+},
+{
+  "tag": "Loewe",
+  "count": 2
+},
+{
+  "tag": "Louis Vuitton",
+  "count": 3
+},
+{
+  "tag": "Luxor Fragrances",
+  "count": 1
+},
+{
+  "tag": "Maison Crivelli",
+  "count": 1
+},
+{
+  "tag": "Maison Francis Kurkdjian",
+  "count": 2
+},
+{
+  "tag": "Maison Margiela",
+  "count": 1
+},
+{
+  "tag": "Malin & Goetz",
+  "count": 1
+},
+{
+  "tag": "Mancera",
+  "count": 1
+},
+{
+  "tag": "Marc Jacobs",
+  "count": 5
+},
+{
+  "tag": "Marina de Bourbon",
+  "count": 2
+},
+{
+  "tag": "Matriarch",
+  "count": 1
+},
+{
+  "tag": "Mauboussin",
+  "count": 1
+},
+{
+  "tag": "MDCI",
+  "count": 2
+},
+{
+  "tag": "Melogranoantico Profumeria Botanica",
+  "count": 1
+},
+{
+  "tag": "Memo",
+  "count": 1
+},
+{
+  "tag": "Meo Fusciuni",
+  "count": 1
+},
+{
+  "tag": "Mercedes-Benz",
+  "count": 1
+},
+{
+  "tag": "Michael Bolton",
+  "count": 1
+},
+{
+  "tag": "Michael Kors",
+  "count": 1
+},
+{
+  "tag": "Miller Harris",
+  "count": 1
+},
+{
+  "tag": "Miu Miu",
+  "count": 1
+},
+{
+  "tag": "Mizensir",
+  "count": 1
+},
+{
+  "tag": "Molinard",
+  "count": 1
+},
+{
+  "tag": "Molton Brown",
+  "count": 1
+},
+{
+  "tag": "Monotheme",
+  "count": 1
+},
+{
+  "tag": "Montale",
+  "count": 7
+},
+{
+  "tag": "Montblanc",
+  "count": 1
+},
+{
+  "tag": "Morris",
+  "count": 1
+},
+{
+  "tag": "Narciso Rodriguez",
+  "count": 1
+},
+{
+  "tag": "Natura",
+  "count": 5
+},
+{
+  "tag": "Nest",
+  "count": 1
+},
+{
+  "tag": "Nicki Minaj",
+  "count": 1
+},
+{
+  "tag": "Nicolaï",
+  "count": 1
+},
+{
+  "tag": "Nina Ricci",
+  "count": 7
+},
+{
+  "tag": "Nivea",
+  "count": 1
+},
+{
+  "tag": "O Boticário",
+  "count": 3
+},
+{
+  "tag": "Oriflame",
+  "count": 3
+},
+{
+  "tag": "Orsay",
+  "count": 1
+},
+{
+  "tag": "Orto Parisi",
+  "count": 1
+},
+{
+  "tag": "Oscar de la Renta",
+  "count": 1
+},
+{
+  "tag": "Otto Kern",
+  "count": 1
+},
+{
+  "tag": "Pacha Ibiza",
+  "count": 2
+},
+{
+  "tag": "Paco Rabanne",
+  "count": 5
+},
+{
+  "tag": "Pantheon Roma",
+  "count": 2
+},
+{
+  "tag": "Parfums de Marly",
+  "count": 1
+},
+{
+  "tag": "Parfums Vintage",
+  "count": 1
+},
+{
+  "tag": "Parle Moi De Parfum",
+  "count": 1
+},
+{
+  "tag": "Pascal Morabito",
+  "count": 1
+},
+{
+  "tag": "Penhaligon's",
+  "count": 2
+},
+{
+  "tag": "Philosophy",
+  "count": 2
+},
+{
+  "tag": "Pierre Guillaume Paris",
+  "count": 1
+},
+{
+  "tag": "Pinrose",
+  "count": 1
+},
+{
+  "tag": "Police",
+  "count": 2
+},
+{
+  "tag": "Prada",
+  "count": 3
+},
+{
+  "tag": "Pryn Parfum",
+  "count": 1
+},
+{
+  "tag": "Puma",
+  "count": 1
+},
+{
+  "tag": "Puredistance",
+  "count": 1
+},
+{
+  "tag": "Rag & Bone",
+  "count": 2
+},
+{
+  "tag": "Ralph Lauren",
+  "count": 1
+},
+{
+  "tag": "Ray Meagher",
+  "count": 1
+},
+{
+  "tag": "Repetto",
+  "count": 1
+},
+{
+  "tag": "Replay",
+  "count": 2
+},
+{
+  "tag": "Roads",
+  "count": 5
+},
+{
+  "tag": "Roberto Cavalli",
+  "count": 3
+},
+{
+  "tag": "Rochas",
+  "count": 2
+},
+{
+  "tag": "Roja Parfums",
+  "count": 2
+},
+{
+  "tag": "Rosine",
+  "count": 4
+},
+{
+  "tag": "Rum Knuckles",
+  "count": 1
+},
+{
+  "tag": "S.T.Dupont",
+  "count": 1
+},
+{
+  "tag": "Salvador Dalí",
+  "count": 1
+},
+{
+  "tag": "Salvatore Ferragamo",
+  "count": 1
+},
+{
+  "tag": "Santi Burgas",
+  "count": 3
+},
+{
+  "tag": "Sarah Baker",
+  "count": 2
+},
+{
+  "tag": "Sergio Tacchini",
+  "count": 1
+},
+{
+  "tag": "Shakespeare Perfume",
+  "count": 1
+},
+{
+  "tag": "Shakira",
+  "count": 5
+},
+{
+  "tag": "Shay & Blue",
+  "count": 1
+},
+{
+  "tag": "Shiseido",
+  "count": 1
+},
+{
+  "tag": "Springfield",
+  "count": 2
+},
+{
+  "tag": "Ted Baker",
+  "count": 1
+},
+{
+  "tag": "Ted Lapidus",
+  "count": 1
+},
+{
+  "tag": "Thameen",
+  "count": 1
+},
+{
+  "tag": "The Body Shop",
+  "count": 1
+},
+{
+  "tag": "The House Of Oud",
+  "count": 2
+},
+{
+  "tag": "The Nue Co.",
+  "count": 1
+},
+{
+  "tag": "Thierry Mugler",
+  "count": 5
+},
+{
+  "tag": "Tiffany",
+  "count": 1
+},
+{
+  "tag": "Tiziana Terenzi",
+  "count": 3
+},
+{
+  "tag": "Tocca",
+  "count": 1
+},
+{
+  "tag": "Tom Ford",
+  "count": 3
+},
+{
+  "tag": "Tommy Bahama",
+  "count": 1
+},
+{
+  "tag": "Tommy Hilfiger",
+  "count": 2
+},
+{
+  "tag": "Tous",
+  "count": 1
+},
+{
+  "tag": "Trussardi",
+  "count": 1
+},
+{
+  "tag": "Uér Mì",
+  "count": 2
+},
+{
+  "tag": "United Colors Of Benetton",
+  "count": 2
+},
+{
+  "tag": "Van Cleef & Arpels",
+  "count": 1
+},
+{
+  "tag": "Van Gils",
+  "count": 1
+},
+{
+  "tag": "Victoria's Secret",
+  "count": 13
+},
+{
+  "tag": "Victorio & Lucchino",
+  "count": 2
+},
+{
+  "tag": "Viktor & Rolf",
+  "count": 4
+},
+{
+  "tag": "WienerBlut",
+  "count": 1
+},
+{
+  "tag": "Xerjoff",
+  "count": 1
+},
+{
+  "tag": "Yardley",
+  "count": 3
+},
+{
+  "tag": "Yves Rocher",
+  "count": 1
+},
+{
+  "tag": "Yves Saint Laurent",
+  "count": 5
+},
+{
+  "tag": "Zadig & Voltaire",
+  "count": 2
+},
+{
+  "tag": "Zara",
+  "count": 10
+},
+{
+  "tag": "Zoologist",
+  "count": 2
+}
+];
+
+series.dataFields.word = "tag";
+series.dataFields.value = "count";
+
+series.heatRules.push({
+"target": series.labels.template,
+"property": "fill",
+"min": am4core.color("#0000CC"),
+"max": am4core.color("#CC00CC"),
+"dataField": "value"
+});
+
+series.labels.template.url = "https://stackoverflow.com/questions/tagged/{word}";
+series.labels.template.urlTarget = "_blank";
+series.labels.template.tooltipText = "{word}: {value}";
+
+var hoverState = series.labels.template.states.create("hover");
+hoverState.properties.fill = am4core.color("#FF0000");
+
+var subtitle = chart.titles.create();
+subtitle.text = "(click to open)";
+
+var title = chart.titles.create();
+title.text = "Most Popular Brands";
+title.fontSize = 20;
+title.fontWeight = "800";
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
